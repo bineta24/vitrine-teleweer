@@ -1,5 +1,5 @@
 
-<header style="background-color: white; opacity: 0.95;" [ngClass]="{'g s r vd ya cj': true, 'hh sm _k dj bl ll': stickyMenu}" (window:scroll)="onScrollT()">
+<header style="background-color: white; opacity: 0.95; position: fixed;" [ngClass]="{'g s r vd ya cj': true, 'hh sm _k dj bl ll': stickyMenu}" (window:scroll)="onScrollT()">
 	<div class="bb ze ki xn 2xl:ud-px-0 oo wf yf i">
 	  <div class="vd to/4 tc wf yf">
 		<a href="index.html">
@@ -25,19 +25,18 @@
 	  <div class="vd wo/4 sd qo f ho oo wf yf" [ngClass]="{ 'd hh rm sr td ud qg ug jc yh': navigationOpen }">
 		<nav>
 		  <ul class="tc _o sf yo cg ep">
-			<li>
-				<a href="index.html" class="xl" [ngClass]="{ 'mk': page === 'home' }">ACCUEIL</a>
+			<li class="scroll-to-section">
+				<a href="home#home" class="xl" [ngClass]="{ 'mk': page === 'home' }" >ACCUEIL</a>
 			 
 			</li>
-			<li><a href="index.html#features" class="xl">A PROPOS</a></li>
-			<li class="c i" [ngClass]="{ 'mk': isSpecialPage() }" (click)="toggleDropdown()">
-			  <a href="#" class="xl tc wf yf bg">
-				SERVICES
-				<svg [ngClass]="{ 'wh': dropdown }" class="th mm we fd pf" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-				  <path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z" />
-				</svg>
+			
+			<li class="scroll-to-section" >
+				<!-- <li class="c i" [ngClass]="{ 'mk': isSpecialPage() }" (click)="toggleDropdown()"></li> -->
+			  <a href="home#avantages"  class="xl tc wf yf bg">
+				AVANTAGES
+				
 			  </a>
-			  <ul class="a" [ngClass]="{ 'tc': dropdown }">
+			  <!-- <ul class="a" [ngClass]="{ 'tc': dropdown }">
 				<li>
 				  <a href="blog-grid.html" class="xl" [ngClass]="{ 'mk': page === 'blog-grid' }">Blog Grid</a>
 				</li>
@@ -53,9 +52,12 @@
 				<li>
 				  <a href="404.html" class="xl" [ngClass]="{ 'mk': page === '404' }">404</a>
 				</li>
-			  </ul>
+			  </ul> -->
 			</li>
-			<li><a href="index.html#support" class="xl">COMMENT CA MARCHE ?</a></li>  
+
+			<li class="scroll-to-section"><a href="home#about" class="xl">A PROPOS</a></li>
+			<li class="scroll-to-section"><a href="home#services"  class="xl">SERVICES</a></li> 
+			<li class="scroll-to-section"><a href="home#blog"  class="xl">BLOG</a></li>  
 			<!-- <li><a href="index.html#support" class="xl">AVANTAGES</a></li> 
 			<li><a href="index.html#support" class="xl">MEDIATHEQUE</a></li>  -->
 			<!-- <li><a href="index.html#support" class="xl"> BLOG</a></li>  -->
@@ -85,17 +87,17 @@
 			  <img class="xc nm" src="../assets/img/doctor2.jpeg" alt="Moon" />
 			</label>
 		  </div>
-		  <a href="signin.html" [ngClass]="{ 'nk yl': page === 'home', 'ok': page === 'home' && stickyMenu }" class="ek pk xl">Se connecter</a>
-		  <a href="signup.html" [ngClass]="{ 'hh/[0.15]': page === 'home', 'sh': page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">S'inscrire</a>
+		  <a href="https://teleweer.com/login-page" [ngClass]="{ 'nk yl': page === 'home', 'ok': page === 'home' && stickyMenu }" class="ek pk xl">Se connecter</a>
+		  <a href="https://teleweer.com/register" [ngClass]="{ 'hh/[0.15]': page === 'home', 'sh': page === 'home' && stickyMenu }" class="lk gh dk rg tc wf xf _l gi hi">S'inscrire</a>
 		</div>
 	  </div>
 	</div>
   </header>
   
 <main>
-	<section class="gj do ir hj sp jr i pg">
+	<section class="gj do ir hj sp jr i pg" id="home" >
 		<div class="xc fn zd/2 2xl:ud-w-187.5 bd 2xl:ud-h-171.5 h q r">
-			<img
+			<!-- <img
 				src="../assets/img/shap.jpeg"
 				alt="shape"
 				class="xc 2xl:ud-block h t -ud-left-[10%] ua"
@@ -110,28 +112,28 @@
 				alt="shape"
 				class="xc 2xl:ud-block h v w va"
 			/>
-			<img src="../assets/img/home.jpeg" alt="shape" class="h q r" />
-			<img src="../assets/img/home.jpeg" alt="Woman" class="h q r ua" />
+			<img src="../assets/img/home.jpeg" alt="shape" class="h q r" /> -->
+			<img style="margin-top: 20%;" src="../assets/img/im1.png" alt="Woman" class="h q r ua" />
 		</div>
 
 		<div class="bb ze ki xn 2xl:ud-px-0">
 			<div class="tc _o">
 				<div class="animate_left jn/2">
 					
-						<h6 class="fk vj zp  kk wm wb">Telewer</h6>
+						<!-- <h6 class="fk vj zp  kk wm wb">Telewer</h6> -->
                       <h6 class="fk vj zp  kk wm wb"> Révolutionnez votre expérience médicale grâce à la télémédecine.   Votre professionnel de sante
 						partout, a tout moment. </h6>
 					
-					<p class="fq">
+					<!-- <p class="fq">
 						Votre santé à portée de main où que vous soyez, quand vous en avez besoin.
                       Bienvenue sur Telewer, la plateforme de télémédecine de référence. Notre mission
                       est de simplifier l'accès aux soins médicaux en utilisant les avancées
                      technologique .Grâce à Telewer, vous pouvez bénéficier de consultations en ligne
                        avec des experts médicaux qualifiés, prendre des rendez-vous en quelques clics, et
                       effectuer des paiements sécurisés par mobile money
-					</p>
+					</p> -->
 					<div class="tc tf yo zf mb">
-						<a href="#" class="ek jk lk gh gi hi rg ml il vc _d _l"
+						<a href="https://teleweer.com/" class="ek jk lk gh gi hi rg ml il vc _d _l"
 							>Réservez maintenant</a
 						>
 						<span class="tc sf">
@@ -146,40 +148,39 @@
 		</div>
 	</section>
 
-	<section id="features">
+	<section  id="avantages">
+		<h3 style="text-align: center;  font-size: 2.5rem; margin-bottom: 5%;" class="mk">Avantages</h3>
 		<div class="bb ze ki yn 2xl:ud-px-12.5">
+			
 			<div class="tc uf zo xf ap zf bp mq">
+				
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg mh">
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-12h2v6h-2zm0 8h2v2h-2z"/>
-						  </svg>
+					<div class="tc wf xf cf ae cd rg ">
+						
+							<img src="../assets/img/acces.png" alt="Icon" />
+		
 					</div>
 					<div>
-						<h4 class="ek yj go kk wm xb">Accès facile aux soins</h4>
-						<p>Bénéficiez d'une prise en charge médicale rapide et pratique, sans contraintes de déplacement ni de temps d'attente.</p>
+						<h4 class="" >Accès facile aux soins</h4>
+						<p class=""  >Bénéficiez d'une prise en charge médicale rapide et pratique, sans contraintes de déplacement ni de temps d'attente.</p>
 					</div>
 				</div>
 
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg nh">
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M17.94 14.05c-.24-.08-.49-.14-.74-.14h-2.04l.84-.84c.2-.2.2-.51 0-.71s-.51-.2-.71 0l-1.5 1.5c-.2.2-.2.51 0 .71l1.5 1.5c.2.2.51.2.71 0s.2-.51 0-.71l-.84-.84h2.04c1.65 0 3-1.35 3-3v-1c0-.28-.22-.5-.5-.5h-5.5c-.28 0-.5.22-.5.5v1c0 1.65 1.35 3 3 3h2.04l-.84.84c-.2.2-.2.51 0 .71s.51.2.71 0l1.5-1.5c.2-.2.2-.51 0-.71l-1.5-1.5c-.19-.21-.5-.21-.7 0-.24.25-.24.66 0 .91l.84.84zm-2.44 2.95l-1.5-1.5c-.2-.2-.51-.2-.71 0s-.2.51 0 .71l.84.84h-2.04c-1.65 0-3 1.35-3 3v1c0 .28.22.5.5.5h5.5c.28 0 .5-.22.5-.5v-1c0-1.65-1.35-3-3-3h-2.04l.84-.84c.2-.2.2-.51 0-.71s-.51-.2-.71 0l-1.5 1.5c-.2.2-.2.51 0 .71l1.5 1.5c.19.21.5.21.7 0 .24-.25.24-.66 0-.91l-.84-.84h2.04c.25 0 .49.06.73.14.97.33 1.66 1.24 1.66 2.31v1c0 1.38-1.12 2.5-2.5 2.5h-5.5c-1.38 0-2.5-1.12-2.5-2.5v-1c0-1.07.69-1.98 1.66-2.31l.73-.14h2.04l-.84.84c-.2.2-.2.51 0 .71s.51.2.71 0l1.5-1.5c.2-.2.2-.51 0-.71l-1.5-1.5c-.19-.2-.5-.2-.7 0-.24.25-.24.66 0 .91l.84.84z"/>
-						  </svg>
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/cons.jpeg" alt="Icon" />
 						  
 					</div>
 					<div>
-						<h4 class="ek yj go kk wm xb">Consultations en ligne</h4>
+						<h4 class="ek yj go kk wm xb" >Consultations en ligne</h4>
 						<p>Consultez des professionnels de santé qualifiés depuis le confort de votre domicile ou de votre bureau, grâce à notre plateforme de
 							télémédecine sécurisée.</p>
 					</div>
 				</div>
 
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg oh">
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M16.5 3h-9C6.67 3 6 3.67 6 4.5v15C6 20.33 6.67 21 7.5 21h9c.83 0 1.5-.67 1.5-1.5v-15C18 3.67 17.33 3 16.5 3zm-9 1h9c.28 0 .5.22.5.5v4H7v-4c0-.28.22-.5.5-.5zm9 15h-9c-.28 0-.5-.22-.5-.5v-4h10v4c0 .28-.22.5-.5.5zM7 13h10v2H7v-2zm0 3h10v2H7v-2zm0 3h10v2H7v-2z"/>
-						  </svg>
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/rv.png" alt="Icon" />
 						  
 					</div>
 					<div>
@@ -189,6 +190,18 @@
 					</div>
 				</div>
 
+				<!-- <div class="animate_top kn to/4 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im1.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Accessibilité pour tous </h4>
+						<p>Que vous résidiez dans une zone reculée ou que vous ayez des contraintes de mobilité, Telewer vous permet d'accéder aux soins médicaux
+							de qualité, sans limites géographiques.</p>
+					</div>
+				</div> -->
+
 				
 			</div>
 
@@ -196,12 +209,11 @@
 
 			<div class="tc uf zo xf ap zf bp mq" style="margin-top: 40px;">
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg mh">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im8.png" alt="">
 						
 						  
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M16.5 3h-9C6.67 3 6 3.67 6 4.5v15C6 20.33 6.67 21 7.5 21h9c.83 0 1.5-.67 1.5-1.5v-15C18 3.67 17.33 3 16.5 3zm-9 1h9c.28 0 .5.22.5.5v4H7v-4c0-.28.22-.5.5-.5zm9 15h-9c-.28 0-.5-.22-.5-.5v-4h10v4c0 .28-.22.5-.5.5zM7 13h10v2H7v-2zm0 3h10v2H7v-2zm0 3h10v2H7v-2z"/>
-						  </svg>
+						
 						  
 						  
 					</div>
@@ -213,10 +225,8 @@
 				</div>
 
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg nh">
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M17.94 14.05c-.24-.08-.49-.14-.74-.14h-2.04l.84-.84c.2-.2.2-.51 0-.71s-.51-.2-.71 0l-1.5 1.5c-.2.2-.2.51 0 .71l1.5 1.5c.2.2.51.2.71 0s.2-.51 0-.71l-.84-.84h2.04c1.65 0 3-1.35 3-3v-1c0-.28-.22-.5-.5-.5h-5.5c-.28 0-.5.22-.5.5v1c0 1.65 1.35 3 3 3h2.04l-.84.84c-.2.2-.2.51 0 .71s.51.2.71 0l1.5-1.5c.2-.2.2-.51 0-.71l-1.5-1.5c-.19-.21-.5-.21-.7 0-.24.25-.24.66 0 .91l.84.84zm-2.44 2.95l-1.5-1.5c-.2-.2-.51-.2-.71 0s-.2.51 0 .71l.84.84h-2.04c-1.65 0-3 1.35-3 3v1c0 .28.22.5.5.5h5.5c.28 0 .5-.22.5-.5v-1c0-1.65-1.35-3-3-3h-2.04l.84-.84c.2-.2.2-.51 0-.71s-.51-.2-.71 0l-1.5 1.5c-.2.2-.2.51 0 .71l1.5 1.5c.19.21.5.21.7 0 .24-.25.24-.66 0-.91l-.84-.84h2.04c.25 0 .49.06.73.14.97.33 1.66 1.24 1.66 2.31v1c0 1.38-1.12 2.5-2.5 2.5h-5.5c-1.38 0-2.5-1.12-2.5-2.5v-1c0-1.07.69-1.98 1.66-2.31l.73-.14h2.04l-.84.84c-.2.2-.2.51 0 .71s.51.2.71 0l1.5-1.5c.2-.2.2-.51 0-.71l-1.5-1.5c-.19-.2-.5-.2-.7 0-.24.25-.24.66 0 .91l.84.84z"/>
-						  </svg>
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im7.svg" alt="">
 						  
 					</div>
 					<div>
@@ -227,10 +237,8 @@
 				</div>
 
 				<div class="animate_top kn to/3 tc cg oq">
-					<div class="tc wf xf cf ae cd rg oh">
-						<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 24 24">
-							<path d="M16.5 3h-9C6.67 3 6 3.67 6 4.5v15C6 20.33 6.67 21 7.5 21h9c.83 0 1.5-.67 1.5-1.5v-15C18 3.67 17.33 3 16.5 3zm-9 1h9c.28 0 .5.22.5.5v4H7v-4c0-.28.22-.5.5-.5zm9 15h-9c-.28 0-.5-.22-.5-.5v-4h10v4c0 .28-.22.5-.5.5zM7 13h10v2H7v-2zm0 3h10v2H7v-2zm0 3h10v2H7v-2z"/>
-						  </svg>
+					<div class="tc wf xf cf ae cd rg ">
+					<img src="../assets/img/im4.png" alt="">
 						  
 					</div>
 					<div>
@@ -240,12 +248,107 @@
 					</div>
 				</div>
 
+
+				<!-- <div class="animate_top kn to/4 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im5.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Économie de temps et d'argent </h4>
+						<p>Évitez les déplacements coûteux et les frais liés aux consultations traditionnelles, en optant pour des consultations en ligne à des
+							tarifs abordables.</p>
+					</div>
+				</div> -->
+
 				
 			</div>
+
+
+			<div class="tc uf zo xf ap zf bp mq" style="margin-top: 40px;">
+				<div class="animate_top kn to/3 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						
+						  
+						<img src="../assets/img/im3.png" alt="">
+						  
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Intégration avec les technologies existantes</h4>
+						<p> Notre plateforme s'intègre facilement avec d'autres systèmes et dispositifs médicaux, garantissant une expérience
+							fluide et complète pour les patients et les professionnels de santé.</p>
+					</div>
+				</div>
+
+				<div class="animate_top kn to/3 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						
+						<img src="../assets/img/innov.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Innovation médicale</h4>
+						<p>Restez à la pointe des avancées médicales en utilisant Telewer, une solution qui exploite les technologies numériques pour améliorer la qualité
+							des soins, y compris la téléexpertise, et optimiser votre expérience médicale.</p>
+					</div>
+				</div>
+
+				<div class="animate_top kn to/3 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im2.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Suivi médical personnalisé</h4>
+						<p> Bénéficiez d'un suivi régulier de votre état de santé, avec des rappels de rendez-vous et des conseils personnalisés de nos
+							professionnels de santé.</p>
+					</div>
+				</div>
+				
+			</div>
+
+
+			<div class="tc uf zo xf ap zf bp mq" style="margin-top: 40px;">
+				
+
+				
+				<div class="animate_top kn to/3 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im1.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Accessibilité pour tous </h4>
+						<p>Que vous résidiez dans une zone reculée ou que vous ayez des contraintes de mobilité, Telewer vous permet d'accéder aux soins médicaux
+							de qualité, sans limites géographiques.</p>
+					</div>
+				</div>
+
+				<div class="animate_top kn to/3 tc cg oq">
+					<div class="tc wf xf cf ae cd rg ">
+						<img src="../assets/img/im5.png" alt="">
+						  
+					</div>
+					<div>
+						<h4 class="ek yj go kk wm xb">Économie de temps et d'argent </h4>
+						<p>Évitez les déplacements coûteux et les frais liés aux consultations traditionnelles, en optant pour des consultations en ligne à des
+							tarifs abordables.</p>
+					</div>
+				</div>
+
+				<div class="animate_top kn to/3 tc cg oq">
+					
+				</div>
+				
+				
+			</div>
+
+			
 		</div>
 	</section>
 
-	<section class="ji gp uq 2xl:ud-py-35 pg">
+	<section class="ji gp uq 2xl:ud-py-35 pg" id="about">
 		<div class="bb ze ki xn wq">
 			<div class="tc wf gg qq">
 				<div class="animate_left xc gn gg jn/2 i">
@@ -266,7 +369,9 @@
 				</div>
 
 				<div class="animate_right jn/2">
-					<h2 class="ek yj mk gb">A propos</h2>
+					<!-- <h2 class="ek yj mk gb">A propos</h2> -->
+					<h3 style="  font-size: 2.5rem; margin-bottom: 5%;" class="mk">
+						A propos</h3>
 					<h4 class="fk vj zp pr kk wm qb">
 						
 					
@@ -289,21 +394,8 @@ Rejoignez-nous dans cette révolution de la santé et découvrez une nouvelle fa
 la télémédecine accessible à tous et contribuer à un avenir plus sain et plus connecté."
 N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision et des valeurs de votre entreprise Telewer. -->
 					</p>
-					<a
-						href="https://youtu.be/CX0d0YtODUQ"
-						data-fslightbox
-						class="vc wf hg mb"
-					>
-						<span class="tc wf xf be dd rg i gh ua">
-							<span class="nf h vc yc vd rg gh qk -ud-z-1"></span>
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-								<path d="M8 5v14l11-7z"/>
-								<path d="M0 0h24v24H0z" fill="none"/>
-							  </svg>
-							  
-						</span>
-						<span class="kk">Comment ça marche</span>
-					</a>
+					<iframe style="margin-top: 5%;"  width="560" height="315" src="https://www.youtube.com/embed/CX0d0YtODUQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					
 				</div>
 			</div>
 		</div>
@@ -540,7 +632,8 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 		</div>
 	</section>
 
-	<section class="lj tp kr">
+	<section class="lj tp kr" id="services">
+		
 		<div
 			x-data="{ sectionTitle: `We Offer The Best Quality Service for You`, sectionTitleText: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam ante in maximus.`}"
 		>
@@ -552,8 +645,9 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 				<p class="bb on/5 wo/5 hq" x-text="sectionTitleText"></p>
 			</div>
 		</div>
-
+		
 		<div class="bb ze ki xn yq mb en">
+			<h3 class="mk" style="text-align: center; font-size: 2.5rem; margin-top: 10%; margin-bottom: 2%;"> Services</h3>
 			<div class="wc qf pn xo ng">
 				<div class="animate_top sg oi pi zq ml il am cn _m">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -581,7 +675,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 				</div>
 
 				<div class="animate_top sg oi pi zq ml il am cn _m">
-					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" >
 						<path d="M10.5 14.5v-9l-6 6 6 6v-4.5h5.5c.825 0 1.5-.675 1.5-1.5v-4l3-3v14h-11zm-7.5-2.5h3l4-4-4-4h-3v8zm9-2c0 .275-.225.5-.5.5h-3v-7h3c.275 0 .5.225.5.5v6zm6 1v4.5h-2v-7h-3v-2h5.5c.825 0 1.5.675 1.5 1.5v3z"/>
 					  </svg>
 					  
@@ -702,7 +796,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 		</div>
 	</section>
 
-	<section class="pg pj vp mr oj wp nr">
+	<!-- <section class="pg pj vp mr oj wp nr">
 		<div
 			x-data="{ sectionTitle: `We Offer Great Affordable Premium Prices.`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
 		>
@@ -855,7 +949,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<section class="hj rp hr">
 		<div
@@ -973,7 +1067,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 		</div>
 	</section>
 
-	<section class="pj vp mr">
+	<!-- <section class="pj vp mr">
 		<div
 			x-data="{ sectionTitle: `Trusted by Global Brands`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
 		>
@@ -1062,9 +1156,9 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 				</a>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
-	<section class="ji gp uq">
+	<section class="ji gp uq" id="blog">
 		<div
 			x-data="{ sectionTitle: `Latest Blogs & News`, sectionTitleText: `It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using.`}"
 		>
@@ -1078,10 +1172,11 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 		</div>
 
 		<div class="bb ye ki xn vq jb jo">
+			<h3 class="mk" style="text-align: center; font-size: 2.5rem;  margin-bottom: 6%;"> Blogs</h3>
 			<div class="wc qf pn xo zf iq">
 				<div class="animate_top sg vk rm xm">
 					<div class="c rc i z-1 pg">
-						<img class="w-full" src="../assets/img/doc7.jpg" alt="Blog" />
+						<img class="w-full" src="../assets/img/doct.jpg" alt="Blog" />
 						<div class="im h r s df vd yc wg tc wf xf al hh/20 nl il z-10">
 							<a
 								href="./blog-single.html"
@@ -1090,7 +1185,23 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 							>
 						</div>
 					</div>
-					
+					<!-- <div class="yh">
+						<div class="tc uf wf ag jq">
+							<div class="tc wf ag">
+								<img src="../assets/img/doctor3.jpeg" alt="User" />
+								<p>Musharof Chy</p>
+							</div>
+							<div class="tc wf ag">
+								<img src="../assets/img/doctor3.jpeg" alt="Calender" />
+								<p>25 Dec, 2025</p>
+							</div>
+						</div>
+						<h4 class="ek tj ml il kk wm xl eq lb">
+							<a href="blog-single.html"
+								>Free advertising for your online business</a
+							>
+						</h4>
+					</div> -->
 				</div>
 
 				<div class="animate_top sg vk rm xm">
@@ -1104,7 +1215,23 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 							>
 						</div>
 					</div>
-					
+					<!-- <div class="yh">
+						<div class="tc uf wf ag jq">
+							<div class="tc wf ag">
+								<img src="" alt="User" />
+								<p>Musharof Chy</p>
+							</div>
+							<div class="tc wf ag">
+								<img src="images/icon-calender.svg" alt="Calender" />
+								<p>25 Dec, 2025</p>
+							</div>
+						</div>
+						<h4 class="ek tj ml il kk wm xl eq lb">
+							<a href="blog-single.html"
+								>9 simple ways to improve your design skills</a
+							>
+						</h4>
+					</div> -->
 				</div>
 
 				<div class="animate_top sg vk rm xm">
@@ -1118,7 +1245,23 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 							>
 						</div>
 					</div>
-					
+					<!-- <div class="yh">
+						<div class="tc uf wf ag jq">
+							<div class="tc wf ag">
+								<img src="" alt="User" />
+								<p>Musharof Chy</p>
+							</div>
+							<div class="tc wf ag">
+								<img src="" alt="Calender" />
+								<p>25 Dec, 2025</p>
+							</div>
+						</div>
+						<h4 class="ek tj ml il kk wm xl eq lb">
+							<a href="blog-single.html"
+								>Tips to quickly improve your coding speed.</a
+							>
+						</h4>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -1343,6 +1486,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 					<p class="lk">
 						Teleweer met à votre disposition un outil de prise de rendez-vous et de consultation en ligne à tout moment.
 					</p>
+					<a class="mk" href="https://teleweer.com/doctor-register">Cliquez ici pour en savoir plus</a>
 				</div>
 				<div class="animate_right bf">
 					<a href="#" class="vc ek kk hh rg ol il cm gi hi">
@@ -1364,11 +1508,11 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 						<img src="../assets/img/logo.png" style="height: 50px; width: 150px;" alt="Logo" class="xc nm" />
 					</a>
 					<p class="lc fb">
-						Trouvez Votre Spécialiste
+						Téléweer ....
 					</p>
 					<ul class="tc wf cg">
 						<li>
-							<a href="#">
+							<a href="https://www.facebook.com/telewerfb?mibextid=LQQJ4d">
 								<svg
 									class="vh ul cl il"
 									width="24"
@@ -1392,7 +1536,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="https://twitter.com/telewer_?s=11">
 								<svg
 									class="vh ul cl il"
 									width="24"
@@ -1416,7 +1560,7 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="https://www.linkedin.com/showcase/telewersn/">
 								<svg
 									class="vh ul cl il"
 									width="24"
@@ -1441,24 +1585,18 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 						</li>
 						<li>
 							<a href="#">
-								<svg
-									class="vh ul cl il"
-									width="24"
-									height="24"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
-								>
-									<g clip-path="url(#clip0_48_1508)">
-										<path
-											d="M7.443 5.3501C8.082 5.3501 8.673 5.4001 9.213 5.5481C9.70301 5.63814 10.1708 5.82293 10.59 6.0921C10.984 6.3391 11.279 6.6861 11.475 7.1311C11.672 7.5761 11.77 8.1211 11.77 8.7141C11.77 9.4071 11.623 10.0001 11.279 10.4451C10.984 10.8911 10.492 11.2861 9.902 11.5831C10.738 11.8311 11.377 12.2761 11.77 12.8691C12.164 13.4631 12.41 14.2051 12.41 15.0461C12.41 15.7391 12.262 16.3321 12.016 16.8271C11.77 17.3221 11.377 17.7671 10.934 18.0641C10.4528 18.3825 9.92084 18.6165 9.361 18.7561C8.771 18.9051 8.181 19.0041 7.591 19.0041H1V5.3501H7.443ZM7.049 10.8901C7.59 10.8901 8.033 10.7421 8.377 10.4951C8.721 10.2481 8.869 9.8021 8.869 9.2581C8.869 8.9611 8.819 8.6641 8.721 8.4671C8.623 8.2691 8.475 8.1201 8.279 7.9721C8.082 7.8731 7.885 7.7741 7.639 7.7251C7.393 7.6751 7.148 7.6751 6.852 7.6751H4V10.8911H7.05L7.049 10.8901ZM7.197 16.7281C7.492 16.7281 7.787 16.6781 8.033 16.6291C8.28138 16.5819 8.51628 16.4805 8.721 16.3321C8.92139 16.1873 9.08903 16.002 9.213 15.7881C9.311 15.5411 9.41 15.2441 9.41 14.8981C9.41 14.2051 9.213 13.7101 8.82 13.3641C8.426 13.0671 7.885 12.9191 7.246 12.9191H4V16.7291H7.197V16.7281ZM16.689 16.6781C17.082 17.0741 17.672 17.2721 18.459 17.2721C19 17.2721 19.492 17.1241 19.885 16.8771C20.279 16.5801 20.525 16.2831 20.623 15.9861H23.033C22.639 17.1731 22.049 18.0141 21.263 18.5581C20.475 19.0531 19.541 19.3501 18.41 19.3501C17.6864 19.3523 16.9688 19.2179 16.295 18.9541C15.6887 18.7266 15.148 18.3529 14.721 17.8661C14.2643 17.4107 13.9267 16.8498 13.738 16.2331C13.492 15.5901 13.393 14.8981 13.393 14.1061C13.393 13.3641 13.492 12.6721 13.738 12.0281C13.9745 11.4082 14.3245 10.8378 14.77 10.3461C15.213 9.9011 15.754 9.5061 16.344 9.2581C17.0007 8.99416 17.7022 8.85969 18.41 8.8621C19.246 8.8621 19.984 9.0111 20.623 9.3571C21.263 9.7031 21.754 10.0991 22.148 10.6931C22.5499 11.2636 22.8494 11.8998 23.033 12.5731C23.131 13.2651 23.18 13.9581 23.131 14.7491H16C16 15.5411 16.295 16.2831 16.689 16.6791V16.6781ZM19.787 11.4841C19.443 11.1381 18.902 10.9401 18.262 10.9401C17.82 10.9401 17.475 11.0391 17.18 11.1871C16.885 11.3361 16.689 11.5341 16.492 11.7321C16.311 11.9234 16.1912 12.1643 16.148 12.4241C16.098 12.6721 16.049 12.8691 16.049 13.0671H20.475C20.377 12.3251 20.131 11.8311 19.787 11.4841V11.4841ZM15.459 6.2901H20.967V7.6261H15.46V6.2901H15.459Z"
-										/>
-									</g>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+									<path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm3.891-12.256a.715.715 0 0 1 0-1.01.715.715 0 0 1 1.01 0 .715.715 0 0 1 0 1.01.715.715 0 0 1-1.01 0zM12 6.973c-2.582 0-4.683 2.1-4.683 4.683 0 2.583 2.1 4.683 4.683 4.683 2.583 0 4.683-2.1 4.683-4.683 0-2.583-2.1-4.683-4.683-4.683zm0 7.45a2.773 2.773 0 1 1 0-5.547 2.773 2.773 0 0 1 0 5.547z"/>
 									<defs>
-										<clipPath id="clip0_48_1508">
+										<clipPath id="clip0_48_1505">
 											<rect width="24" height="24" fill="white" />
 										</clipPath>
 									</defs>
-								</svg>
+								  </svg>
+								  
+								  
+								  
+								  
 							</a>
 						</li>
 					</ul>
@@ -1468,8 +1606,8 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 					<div class="animate_top">
 						<h4 class="kk wm tj ec">Trouvez Votre Spécialiste</h4>
 						<ul>
-							<li><a href="#" class="sc xl vb">Chercher un Professionnnel</a></li>
-							<li><a href="#" class="sc xl vb">Prendre Rendez-vous</a></li>
+							<li><a href="https://teleweer.com/home" class="sc xl vb">Chercher un Professionnnel</a></li>
+							<li><a href="https://teleweer.com/login-page?id=1102" class="sc xl vb">Prendre Rendez-vous</a></li>
 							
 						</ul>
 					</div>
@@ -1567,3 +1705,45 @@ N'hésitez pas à personnaliser et ajuster le contenu en fonction de la vision e
 	};
 </script>
 <script defer src="bundle.js"></script>
+<script>  $('.scroll-to-section a[href*=\\#]:not([href=\\#])').on('click', function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        var width = $(window).width();
+        if(width < 991) {
+          $('.menu-trigger').removeClass('active');
+          $('.header-area .nav').slideUp(200);  
+        }       
+        $('html,body').animate({
+          scrollTop: (target.offset().top) + 1
+        }, 700);
+        return false;
+      }
+    }
+  });
+
+  $(document).ready(function () {
+      $(document).on("scroll", onScroll);
+      
+      //smoothscroll
+      $('.scroll-to-section a[href^="#"]').on('click', function (e) {
+          e.preventDefault();
+          $(document).off("scroll");
+          
+          $('.scroll-to-section a').each(function () {
+              $(this).removeClass('active');
+          })
+          $(this).addClass('active');
+        
+          var target = this.hash,
+          menu = target;
+          var target = $(this.hash);
+          $('html, body').stop().animate({
+              scrollTop: (target.offset().top) + 1
+          }, 500, 'swing', function () {
+              window.location.hash = target;
+              $(document).on("scroll", onScroll);
+          });
+      });
+  });</script>

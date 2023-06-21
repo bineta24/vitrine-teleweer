@@ -1299,7 +1299,7 @@
       height: auto;
   }
   .cd {
-      height: 5.25rem;
+      height: 5rem;
   }
   .dd {
       height: 3.125rem;
@@ -1381,7 +1381,7 @@
       width: fit-content;
   }
   .ae {
-      width: 5.25rem;
+      width: 5rem;
   }
   .be {
       width: 3.125rem;
@@ -1699,8 +1699,8 @@
       background-color: rgb(244 247 250 / var(--tw-bg-opacity));
   }
   .gh {
-      --tw-bg-opacity: 1;
-      background-color: rgb(78 107 255 / var(--tw-bg-opacity));
+     
+      background-color: #e14a7e;
   }
   .hh\/20 {
       background-color: rgb(255 255 255 / 0.2);
@@ -2018,7 +2018,7 @@
   }
   .mk {
       --tw-text-opacity: 1;
-      color: rgb(78 107 255 / var(--tw-text-opacity));
+      color: #e14a7e
   }
   .nk {
       --tw-text-opacity: 1 !important;
